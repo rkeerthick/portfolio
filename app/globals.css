@@ -38,3 +38,17 @@ body {
   background: var(--accent-glow);
   color: var(--text-primary);
 }
+
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
+.card-shimmer:hover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.04) 50%, transparent 60%);
+  animation: shimmer 0.55s ease forwards;
+  pointer-events: none;
+}
