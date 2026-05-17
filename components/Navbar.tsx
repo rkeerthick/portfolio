@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -42,7 +44,7 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled ? "rgba(13,13,15,0.85)" : "transparent",
+        background: scrolled ? "var(--nav-bg)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
       }}
@@ -89,51 +91,57 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* CTA */}
-        <a
-          href="mailto:rkeerthick1@gmail.com"
-          className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:opacity-85"
-          style={{ background: "var(--accent)", color: "#fff" }}
-        >
-          Hire me
-        </a>
+        {/* Right side: theme toggle + CTA */}
+        <div className="hidden sm:flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="mailto:rkeerthick1@gmail.com"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:opacity-85"
+            style={{ background: "var(--accent)", color: "#fff" }}
+          >
+            Hire me
+          </a>
+        </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="sm:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((v) => !v)}
-        >
-          <span
-            className="w-5 h-0.5 rounded transition-all duration-200 origin-center"
-            style={{
-              background: "var(--text-primary)",
-              transform: menuOpen ? "translateY(4px) rotate(45deg)" : "none",
-            }}
-          />
-          <span
-            className="w-5 h-0.5 rounded transition-all duration-200"
-            style={{
-              background: "var(--text-primary)",
-              opacity: menuOpen ? 0 : 1,
-            }}
-          />
-          <span
-            className="w-5 h-0.5 rounded transition-all duration-200 origin-center"
-            style={{
-              background: "var(--text-primary)",
-              transform: menuOpen ? "translateY(-4px) rotate(-45deg)" : "none",
-            }}
-          />
-        </button>
+        {/* Mobile: theme toggle + hamburger */}
+        <div className="sm:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            <span
+              className="w-5 h-0.5 rounded transition-all duration-200 origin-center"
+              style={{
+                background: "var(--text-primary)",
+                transform: menuOpen ? "translateY(4px) rotate(45deg)" : "none",
+              }}
+            />
+            <span
+              className="w-5 h-0.5 rounded transition-all duration-200"
+              style={{
+                background: "var(--text-primary)",
+                opacity: menuOpen ? 0 : 1,
+              }}
+            />
+            <span
+              className="w-5 h-0.5 rounded transition-all duration-200 origin-center"
+              style={{
+                background: "var(--text-primary)",
+                transform: menuOpen ? "translateY(-4px) rotate(-45deg)" : "none",
+              }}
+            />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
       {menuOpen && (
         <div
           className="sm:hidden border-t px-6 py-4 flex flex-col gap-1"
-          style={{ background: "rgba(13,13,15,0.95)", borderColor: "var(--border)" }}
+          style={{ background: "var(--nav-bg)", backdropFilter: "blur(12px)", borderColor: "var(--border)" }}
         >
           {navLinks.map(({ label, href }) => (
             <a

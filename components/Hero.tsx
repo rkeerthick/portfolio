@@ -21,7 +21,7 @@ export default function Hero() {
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl"
         style={{ background: "var(--accent)" }}
         initial={{ opacity: 0, scale: 0.6 }}
-        animate={{ opacity: [0.12, 0.2, 0.12], scale: [0.9, 1.05, 0.9] }}
+        animate={{ opacity: [0.06, 0.1, 0.06], scale: [0.9, 1.05, 0.9] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
       />
 
@@ -44,13 +44,13 @@ export default function Hero() {
 
         {/* Name */}
         <motion.h1
-          className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
+          className="text-5xl sm:text-6xl md:text-7xl font-light tracking-normal leading-[1.1] mb-6"
           style={{ color: "var(--text-primary)" }}
           {...item(0.15)}
         >
           Keerthick{" "}
           <motion.span
-            style={{ color: "var(--accent)", display: "inline-block" }}
+            style={{ color: "var(--accent)", display: "inline-block", fontWeight: 400 }}
             initial={{ opacity: 0, x: -12 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.65, delay: 0.3, ease: EASE }}
