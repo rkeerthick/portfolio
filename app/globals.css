@@ -2,14 +2,14 @@
 
 /* Default dark theme */
 :root {
-  --background: #0d0d0f;
-  --surface: #16161a;
-  --border: #2a2a35;
-  --text-primary: #f0f0f5;
-  --text-secondary: #9090a8;
-  --accent: #7c6af7;
-  --accent-glow: rgba(124, 106, 247, 0.15);
-  --nav-bg: rgba(13, 13, 15, 0.85);
+  --background: #0e0b09;
+  --surface: #1a1512;
+  --border: #2e2520;
+  --text-primary: #f0ebe8;
+  --text-secondary: #9a8880;
+  --accent: #f97316;
+  --accent-glow: rgba(249, 115, 22, 0.15);
+  --nav-bg: rgba(14, 11, 9, 0.85);
 }
 
 @theme inline {
