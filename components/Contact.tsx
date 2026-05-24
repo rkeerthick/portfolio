@@ -119,11 +119,10 @@ export default function Contact() {
         {/* Bottom bar */}
         <Reveal delay={0.1}>
           <div
-            className="mt-12 pt-8 border-t flex flex-col sm:flex-row items-center justify-between gap-4 text-xs"
+            className="mt-12 pt-8 border-t flex items-center justify-center text-xs"
             style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
           >
             <span>© {new Date().getFullYear()} Keerthick Ravikumar. All rights reserved.</span>
-            <span className="font-mono hidden sm:inline">Built with Next.js · Tailwind CSS · ♥</span>
           </div>
         </Reveal>
       </div>
