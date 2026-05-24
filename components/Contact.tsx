@@ -123,7 +123,7 @@ export default function Contact() {
             style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
           >
             <span>© {new Date().getFullYear()} Keerthick Ravikumar. All rights reserved.</span>
-            <span className="font-mono">Built with Next.js · Tailwind CSS · ♥</span>
+            <span className="font-mono hidden sm:inline">Built with Next.js · Tailwind CSS · ♥</span>
           </div>
         </Reveal>
       </div>
