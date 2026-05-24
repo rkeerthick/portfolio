@@ -117,14 +117,12 @@ export default function Contact() {
         </div>
 
         {/* Bottom bar */}
-        <Reveal delay={0.1}>
-          <div
-            className="mt-12 pt-8 border-t flex items-center justify-center text-xs"
-            style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
-          >
-            <span>© {new Date().getFullYear()} Keerthick Ravikumar. All rights reserved.</span>
-          </div>
-        </Reveal>
+        <div
+          className="mt-12 pt-8 border-t flex items-center justify-center text-xs"
+          style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
+        >
+          <span>© {new Date().getFullYear()} Keerthick Ravikumar. All rights reserved.</span>
+        </div>
       </div>
     </footer>
   );
