@@ -10,7 +10,7 @@ const skillGroups = [
   },
   {
     category: "Frameworks & Libraries",
-    skills: ["React.js", "Next.js", "Redux Toolkit", "TanStack Query", "MobX", "Tailwind CSS"],
+    skills: ["React.js", "Next.js", "Redux Toolkit", "TanStack Query", "MobX", "Tailwind CSS", "D3.js", "shadcn/ui", "Express"],
   },
   {
     category: "Architecture & Scale",
@@ -26,15 +26,15 @@ const skillGroups = [
   },
   {
     category: "Testing & Code Quality",
-    skills: ["Jest", "React Testing Library", "ESLint", "Prettier", "Code Reviews"],
+    skills: ["Jest", "Vitest", "React Testing Library", "ESLint", "Prettier", "Code Reviews"],
   },
   {
     category: "Analytics & Integrations",
-    skills: ["Mixpanel", "Google Analytics", "Meta Pixel", "A/B Testing", "Razorpay", "Pinelabs", "Google OAuth 2.0"],
+    skills: ["Mixpanel", "Google Analytics", "Meta Pixel", "A/B Testing", "Razorpay", "Pinelabs", "Google OAuth 2.0", "GitHub REST API"],
   },
   {
     category: "Cloud & Tooling",
-    skills: ["CI/CD Pipelines", "Firebase", "Git", "Jira", "Postman", "VS Code"],
+    skills: ["CI/CD Pipelines", "Firebase", "Railway", "Vite", "Node.js", "Git", "Jira", "Postman", "VS Code"],
   },
 ];
 

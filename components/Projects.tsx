@@ -6,6 +6,16 @@ import { Reveal } from "@/components/motion";
 const projects = [
   {
     number: "01",
+    title: "Git History Visualizer",
+    description:
+      "Interactive web app that transforms git repository history into explorable visualizations — commit DAG with pan/zoom, branch timelines, contributor analytics, file change explorer, and search by author, date, or path.",
+    tags: ["React 18", "TypeScript", "Vite", "D3.js", "Zustand", "Node.js", "Express", "simple-git", "shadcn/ui"],
+    github: "https://github.com/rkeerthick/git-history-visualizer",
+    live: "https://git-history-visualizer-client.vercel.app/",
+    wip: false,
+  },
+  {
+    number: "03",
     title: "LogLens",
     description:
       "Browser-based log analysis tool that processes files entirely client-side. Supports JSON, Apache, Nginx & plain-text with visual dashboards and multi-provider AI chat — no data leaves the browser.",
@@ -15,7 +25,7 @@ const projects = [
     wip: false,
   },
   {
-    number: "02",
+    number: "04",
     title: "Shop Editor",
     description:
       "Free, self-hostable e-commerce platform. Drag-and-drop storefront builder, product & order management, Stripe payments, and Cloudinary uploads — no subscription fees, MIT licensed.",
@@ -25,7 +35,7 @@ const projects = [
     wip: false,
   },
   {
-    number: "03",
+    number: "05",
     title: "AI Code Review",
     description:
       "AI-powered code review tool that surfaces issues, suggests improvements, and enforces best practices. TypeScript monorepo with CI/CD via GitHub Actions, deployed on Vercel and Fly.io.",
