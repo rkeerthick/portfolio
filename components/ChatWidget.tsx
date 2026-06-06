@@ -124,7 +124,6 @@ export default function ChatWidget() {
               </span>
               <div>
                 <p className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>Ask about Keerthick</p>
-                <p className="text-xs" style={{ color: "var(--text-secondary)" }}>Powered by Groq · Llama 3.3</p>
               </div>
             </div>
 
